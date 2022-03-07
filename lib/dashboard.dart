@@ -26,6 +26,7 @@ class _DashboardState extends State<Dashboard>
   @override
   void initState() {
     super.initState();
+    ////
     DatabaseReference databaseReference = FirebaseDatabase.instance.reference();
     databaseReference.child('air quality').onValue.listen((event) {
       final dataSnapshot = event.snapshot;
